@@ -5,23 +5,20 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Unity WebGL Player | Recovery Land</title>
     <style>
-      *{ padding: 0; margin: 0;}
-      body,html{
-        width: 100%; 
-        aspect-ratio: 16/9;
-        overflow: hidden;
+      *{padding: 0; margin: 0;}
+      html,body{
+        width: 100%; aspect-ratio: 16/9;
       }
     </style>
   </head>
-
   <body style="text-align: center">
     <canvas id="unity-canvas" width=960 height=600 style="width: 87%; height: 87%; background: #231F20"></canvas>
-    <script src="Build/Webgl17.loader.js"></script>
+    <script src="Build/Webgl1.loader.js"></script>
     <script>
       createUnityInstance(document.querySelector("#unity-canvas"), {
-        dataUrl: "Build/Webgl17.data",
-        frameworkUrl: "Build/Webgl17.framework.js",
-        codeUrl: "Build/Webgl17.wasm",
+        dataUrl: "Build/Webgl1.data",
+        frameworkUrl: "Build/Webgl1.framework.js",
+        codeUrl: "Build/Webgl1.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "Recovery Land",
